@@ -1,6 +1,8 @@
-# Select
+﻿# Select
 
-Native select with neumorphic styling — full native accessibility for free.
+Native select with neumorphic styling â€” full native accessibility for free.
+
+<div data-demo="select"></div>
 
 ```tsx
 import { Select } from "@rueblibuebli/neumorph-ui";
@@ -18,9 +20,9 @@ import { Select } from "@rueblibuebli/neumorph-ui";
 
 | Prop | Type | Default | Description |
 |---|---|---|---|
-| `label` / `hint` / `invalid` | — | — | Same wiring as `Input` |
-| `options` | `{ value, label, disabled? }[]` | — | Declarative options |
-| `children` | `ReactNode` | — | Alternative: custom `<option>` children |
+| `label` / `hint` / `invalid` | â€” | â€” | Same wiring as `Input` |
+| `options` | `{ value, label, disabled? }[]` | â€” | Declarative options |
+| `children` | `ReactNode` | â€” | Alternative: custom `<option>` children |
 | `size` | `"sm" \| "md" \| "lg"` | `"md"` | Field height |
 
 Native `select` attributes pass through. The chevron is decorative; the native dropdown menu is used as-is for maximum compatibility.

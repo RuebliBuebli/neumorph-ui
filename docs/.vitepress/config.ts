@@ -30,6 +30,11 @@ export default defineConfig({
   title: "neumorph-ui",
   description: "Neumorphic React component and style library",
   base: "/neumorph-ui/",
+  vite: {
+    esbuild: {
+      jsx: "automatic",
+    },
+  },
   themeConfig: {
     nav: [
       { text: "Guide", link: "/getting-started" },

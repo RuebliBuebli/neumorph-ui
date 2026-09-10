@@ -1,6 +1,8 @@
-# Spinner
+﻿# Spinner
 
 Loading indicator with `role="status"`.
+
+<div data-demo="spinner"></div>
 
 ```tsx
 import { Spinner } from "@rueblibuebli/neumorph-ui";

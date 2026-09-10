@@ -1,6 +1,8 @@
-# Progress
+﻿# Progress
 
 Determinate and indeterminate progress on a sunken track.
+
+<div data-demo="progress"></div>
 
 ```tsx
 import { Progress } from "@rueblibuebli/neumorph-ui";
@@ -14,7 +16,7 @@ import { Progress } from "@rueblibuebli/neumorph-ui";
 
 | Prop | Type | Default | Description |
 |---|---|---|---|
-| `value` | `number` | — | 0–100; omit for indeterminate |
+| `value` | `number` | â€” | 0â€“100; omit for indeterminate |
 | `tone` | `"accent" \| "success" \| "warning" \| "error"` | `"accent"` | Bar color |
 | `size` | `"sm" \| "md" \| "lg"` | `"md"` | Track height |
-| `label` | `string` | — | Accessible name |
+| `label` | `string` | â€” | Accessible name |

@@ -1,13 +1,15 @@
-# Accordion
+﻿# Accordion
 
 Collapsible sections with disclosure semantics.
+
+<div data-demo="accordion"></div>
 
 ```tsx
 import { Accordion } from "@rueblibuebli/neumorph-ui";
 
 <Accordion
   items={[
-    { key: "faq", title: "What is neumorphism?", content: "…" },
+    { key: "faq", title: "What is neumorphism?", content: "â€¦" },
     { key: "lic", title: "License?", content: "MIT." },
   ]}
 />

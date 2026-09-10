@@ -1,6 +1,8 @@
-# Modal
+﻿# Modal
 
 Dialog with focus trap, focus restore, Escape/backdrop close and scroll lock.
+
+<div data-demo="modal"></div>
 
 ```tsx
 import { useState } from "react";
@@ -35,8 +37,8 @@ function Example() {
 |---|---|---|---|
 | `open` | `boolean` | required | Visibility |
 | `onClose` | `() => void` | required | Close callback |
-| `title` | `ReactNode` | — | Heading (used as accessible name) |
-| `footer` | `ReactNode` | — | Action bar |
+| `title` | `ReactNode` | â€” | Heading (used as accessible name) |
+| `footer` | `ReactNode` | â€” | Action bar |
 | `width` | `number` | `480` | Max panel width in px |
 | `dismissible` | `boolean` | `true` | `false` disables Escape + backdrop close |
 

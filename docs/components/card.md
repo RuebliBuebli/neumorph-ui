@@ -1,6 +1,8 @@
-# Card
+﻿# Card
 
 A soft surface container with optional header and footer slots.
+
+<div data-demo="card"></div>
 
 ```tsx
 import { Card } from "@rueblibuebli/neumorph-ui";
@@ -16,11 +18,11 @@ import { Card } from "@rueblibuebli/neumorph-ui";
 |---|---|---|---|
 | `variant` | `"raised" \| "sunken"` | `"raised"` | Extruded or pressed surface |
 | `pad` | `0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6` | `4` | Padding step (`--neu-space-*`) |
-| `header` / `footer` | `ReactNode` | — | Slots above/below the body |
+| `header` / `footer` | `ReactNode` | â€” | Slots above/below the body |
 | `as` | `ElementType` | `"div"` | Render as e.g. `section` |
 
 ```tsx
 <Card as="section" variant="sunken" pad={2} aria-label="Details">
-  …
+  â€¦
 </Card>
 ```

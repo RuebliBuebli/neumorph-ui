@@ -1,6 +1,8 @@
-# IconButton
+﻿# IconButton
 
 Icon-only button; an accessible label is required.
+
+<div data-demo="icon-button"></div>
 
 ```tsx
 import { IconButton } from "@rueblibuebli/neumorph-ui";
@@ -8,7 +10,7 @@ import { IconButton } from "@rueblibuebli/neumorph-ui";
 <IconButton
   aria-label="Add item"
   shape="circle"
-  icon={<svg viewBox="0 0 16 16">…</svg>}
+  icon={<svg viewBox="0 0 16 16">â€¦</svg>}
 />
 ```
 
