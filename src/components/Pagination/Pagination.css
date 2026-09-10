@@ -1,0 +1,43 @@
+.neu-pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--neu-space-2);
+}
+
+.neu-pagination__page {
+  min-width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: var(--neu-radius-sm);
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out-sm);
+  color: var(--neu-text-secondary);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding-inline: var(--neu-space-2);
+  cursor: pointer;
+  transition:
+    box-shadow var(--neu-transition),
+    color var(--neu-transition);
+}
+
+.neu-pagination__page:not(.neu-pagination__page--current):hover {
+  color: var(--neu-accent);
+}
+
+.neu-pagination__page--current {
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+  color: var(--neu-accent);
+}
+
+.neu-pagination__page:focus-visible {
+  outline: none;
+  box-shadow: var(--neu-shadow-out-sm), var(--neu-focus-ring);
+}
+
+.neu-pagination__ellipsis {
+  color: var(--neu-text-muted);
+  padding-inline: var(--neu-space-1);
+}

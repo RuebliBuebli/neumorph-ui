@@ -1,0 +1,50 @@
+.neu-skeleton-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--neu-space-2);
+}
+
+.neu-skeleton {
+  display: inline-block;
+  border-radius: var(--neu-radius-sm);
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+  animation: neu-skeleton-pulse 1.6s ease-in-out infinite;
+}
+
+.neu-skeleton--text {
+  width: 100%;
+  height: 0.85rem;
+}
+
+.neu-skeleton--text-last {
+  width: 60%;
+}
+
+.neu-skeleton--rect {
+  width: 100%;
+  height: 120px;
+}
+
+.neu-skeleton--circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+@keyframes neu-skeleton-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neu-skeleton {
+    animation: none;
+  }
+}

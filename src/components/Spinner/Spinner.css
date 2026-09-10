@@ -1,0 +1,41 @@
+.neu-spinner {
+  display: inline-flex;
+  align-items: center;
+}
+
+.neu-spinner__ring {
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid var(--neu-surface-sunken);
+  border-top-color: var(--neu-accent);
+  animation: neu-spinner-rotate 800ms linear infinite;
+}
+
+.neu-spinner--sm .neu-spinner__ring {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.neu-spinner--md .neu-spinner__ring {
+  width: 26px;
+  height: 26px;
+}
+
+.neu-spinner--lg .neu-spinner__ring {
+  width: 40px;
+  height: 40px;
+  border-width: 4px;
+}
+
+@keyframes neu-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neu-spinner__ring {
+    animation-duration: 2s;
+  }
+}

@@ -1,0 +1,46 @@
+.neu-table-wrapper {
+  border-radius: var(--neu-radius-md);
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+  overflow: auto;
+}
+
+.neu-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--neu-text-primary);
+  font-size: 0.9rem;
+}
+
+.neu-table__th {
+  padding: var(--neu-space-3) var(--neu-space-4);
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--neu-text-muted);
+  white-space: nowrap;
+}
+
+.neu-table__head--sticky .neu-table__th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out-sm);
+}
+
+.neu-table__td {
+  padding: var(--neu-space-3) var(--neu-space-4);
+  border-top: 1px solid var(--neu-accent-soft);
+  color: var(--neu-text-secondary);
+}
+
+.neu-table__row:hover .neu-table__td {
+  background-color: var(--neu-accent-soft);
+}
+
+.neu-table--zebra .neu-table__row:nth-child(odd) .neu-table__td {
+  background-color: var(--neu-surface-raised);
+}
