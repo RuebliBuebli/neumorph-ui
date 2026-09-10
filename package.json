@@ -1,6 +1,6 @@
 {
   "name": "@rueblibuebli/neumorph-ui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Neumorphic (soft UI) React component and style library",
   "type": "module",
   "license": "MIT",
