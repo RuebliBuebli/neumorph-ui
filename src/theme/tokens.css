@@ -37,10 +37,10 @@
   --neu-text-muted: #64718a;
 
   /* Accent */
-  --neu-accent: #4757b8;
-  --neu-accent-hover: #3b4ba8;
+  --neu-accent: #3164a4;
+  --neu-accent-hover: #27528c;
   --neu-on-accent: #fff;
-  --neu-accent-soft: rgb(71 87 184 / 18%);
+  --neu-accent-soft: rgb(49 100 164 / 18%);
 
   /* Feedback */
   --neu-success: #22703f;
@@ -62,7 +62,16 @@
   --neu-space-6: 32px;
 
   /* Focus (strong ring — critical for low-contrast neumorphism) */
-  --neu-focus-ring: 0 0 0 3px rgb(71 87 184 / 60%);
+  --neu-focus-ring: 0 0 0 3px rgb(49 100 164 / 60%);
+
+  /* Typography */
+  --neu-font-sans:
+    "Nunito",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    roboto,
+    sans-serif;
 
   /* Motion */
   --neu-transition: 160ms ease;
@@ -96,10 +105,10 @@
   --neu-text-muted: #949cab;
 
   /* Accent — brighter for contrast on dark surfaces */
-  --neu-accent: #8a9bf0;
-  --neu-accent-hover: #9dabf4;
-  --neu-on-accent: #1c2130;
-  --neu-accent-soft: rgb(138 155 240 / 22%);
+  --neu-accent: #7fb3e3;
+  --neu-accent-hover: #96c2ea;
+  --neu-on-accent: #12233a;
+  --neu-accent-soft: rgb(127 179 227 / 22%);
 
   /* Feedback */
   --neu-success: #6cc793;
@@ -107,5 +116,5 @@
   --neu-error: #e57d91;
   --neu-info: #72bce5;
 
-  --neu-focus-ring: 0 0 0 3px rgb(138 155 240 / 70%);
+  --neu-focus-ring: 0 0 0 3px rgb(127 179 227 / 70%);
 }

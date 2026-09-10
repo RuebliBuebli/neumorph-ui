@@ -3,7 +3,7 @@
 [![CI](https://github.com/RuebliBuebli/neumorph-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/RuebliBuebli/neumorph-ui/actions/workflows/ci.yml)
 [![Release](https://github.com/RuebliBuebli/neumorph-ui/actions/workflows/release.yml/badge.svg)](https://github.com/RuebliBuebli/neumorph-ui/actions/workflows/release.yml)
 [![Docs](https://github.com/RuebliBuebli/neumorph-ui/actions/workflows/docs.yml/badge.svg)](https://github.com/RuebliBuebli/neumorph-ui/actions/workflows/docs.yml)
-[![Version](https://img.shields.io/badge/version-1.0.0-4757b8)](https://github.com/RuebliBuebli/neumorph-ui/releases)
+[![Version](https://img.shields.io/badge/version-1.0.0-3164a4)](https://github.com/RuebliBuebli/neumorph-ui/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A neumorphic (soft UI) React component and style library.
