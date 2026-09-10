@@ -1,0 +1,128 @@
+.neu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--neu-space-2);
+  border: 0;
+  border-radius: var(--neu-radius-md);
+  background-color: var(--neu-surface);
+  color: var(--neu-text-primary);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    box-shadow var(--neu-transition),
+    background-color var(--neu-transition),
+    color var(--neu-transition),
+    transform var(--neu-transition);
+}
+
+.neu-button:focus-visible {
+  outline: none;
+  box-shadow: var(--neu-shadow-out-sm), var(--neu-focus-ring);
+}
+
+.neu-button:disabled,
+.neu-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  color: var(--neu-text-muted);
+  opacity: 0.7;
+}
+
+/* Variants */
+
+.neu-button--raised {
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out);
+}
+
+.neu-button--raised:not(:disabled, [aria-disabled="true"]):hover {
+  background-color: var(--neu-surface);
+}
+
+.neu-button--raised:not(:disabled, [aria-disabled="true"]):active {
+  box-shadow: var(--neu-shadow-in);
+  transform: scale(0.98);
+}
+
+.neu-button--sunken {
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in);
+}
+
+.neu-button--flat:not(:disabled, [aria-disabled="true"]):hover {
+  background-color: var(--neu-surface-raised);
+}
+
+.neu-button--accent {
+  background-color: var(--neu-accent);
+  color: var(--neu-on-accent);
+}
+
+.neu-button--accent:not(:disabled, [aria-disabled="true"]):hover {
+  background-color: var(--neu-accent-hover);
+}
+
+.neu-button--accent:not(:disabled, [aria-disabled="true"]):active {
+  background-color: var(--neu-accent-hover);
+  box-shadow: var(--neu-shadow-in-sm);
+  transform: scale(0.98);
+}
+
+/* Sizes */
+
+.neu-button--sm {
+  min-height: 32px;
+  padding: var(--neu-space-1) var(--neu-space-3);
+  font-size: 0.85rem;
+}
+
+.neu-button--md {
+  min-height: 42px;
+  padding: var(--neu-space-2) var(--neu-space-4);
+  font-size: 0.95rem;
+}
+
+.neu-button--lg {
+  min-height: 52px;
+  padding: var(--neu-space-3) var(--neu-space-5);
+  font-size: 1.05rem;
+  border-radius: var(--neu-radius-lg);
+}
+
+/* Loading spinner — neumorphic ring */
+
+.neu-button__spinner {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid var(--neu-text-muted);
+  border-top-color: transparent;
+  animation: neu-button-spin 700ms linear infinite;
+}
+
+[data-loading="true"] .neu-button__spinner {
+  border-color: currentcolor;
+  border-top-color: transparent;
+}
+
+@keyframes neu-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neu-button {
+    transition: none;
+  }
+
+  .neu-button--raised:active,
+  .neu-button--accent:active {
+    transform: none;
+  }
+
+  .neu-button__spinner {
+    animation-duration: 1.5s;
+  }
+}
