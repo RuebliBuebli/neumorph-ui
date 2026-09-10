@@ -1,0 +1,80 @@
+.neu-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--neu-space-3);
+  cursor: pointer;
+  user-select: none;
+}
+
+.neu-toggle--disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.neu-toggle__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.neu-toggle__track {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  border-radius: var(--neu-radius-pill);
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+  transition: background-color var(--neu-transition);
+  flex-shrink: 0;
+}
+
+.neu-toggle__thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out-sm);
+  transition: transform var(--neu-transition), background-color var(--neu-transition);
+}
+
+.neu-toggle__input:checked + .neu-toggle__track {
+  background-color: var(--neu-accent-soft);
+}
+
+.neu-toggle__input:checked + .neu-toggle__track .neu-toggle__thumb {
+  background-color: var(--neu-accent);
+  transform: translateX(22px);
+}
+
+.neu-toggle__input:focus-visible + .neu-toggle__track {
+  box-shadow: var(--neu-shadow-in-sm), var(--neu-focus-ring);
+}
+
+.neu-toggle__label {
+  font-size: 0.9rem;
+  color: var(--neu-text-primary);
+}
+
+.neu-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neu-toggle__thumb,
+  .neu-toggle__track {
+    transition: none;
+  }
+}
