@@ -8,7 +8,7 @@ A neumorphic (soft UI) React component and style library.
 
 ## Status
 
-Bootstrap in progress — see the [issues](https://github.com/RuebliBuebli/neumorph-ui/issues) and [milestones](https://github.com/RuebliBuebli/neumorph-ui/milestones) for the roadmap (v0.1.0 → v1.0.0).
+All v0.1–v0.4 milestone components shipped. Documentation: https://rueblibuebli.github.io/neumorph-ui/
 
 ## Installation
 
