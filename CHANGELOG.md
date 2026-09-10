@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Accessibility: light theme tokens retuned for WCAG AA (text 4.5:1, UI accents 3:1+); dark muted text brightened. Contrast is now guarded by automated tests.
+- Stronger light-theme focus ring.
+
+### Added
+
+- Token contrast regression tests (light + dark, 18 assertions) and a keyboard-only walkthrough test across interactive components.
+
 ## [0.4.0] - 2026-09-10
 
 ### Added
