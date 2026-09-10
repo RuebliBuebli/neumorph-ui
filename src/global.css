@@ -1,0 +1,19 @@
+@import url("./theme/tokens.css");
+
+/*
+ * Minimal base: make the page surface and text consume tokens so a bare
+ * app looks neumorphic as soon as styles.css is imported.
+ */
+
+body {
+  background-color: var(--neu-bg);
+  color: var(--neu-text-primary);
+}
+
+.neu-reset *,
+.neu-reset *::before,
+.neu-reset *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
