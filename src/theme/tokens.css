@@ -31,22 +31,22 @@
     inset -3px -3px 6px rgb(255 255 255 / 75%),
     inset 3px 3px 6px rgb(163 177 198 / 45%);
 
-  /* Text */
+  /* Text — contrast checked against --neu-bg (WCAG) */
   --neu-text-primary: #2d3a4f;
-  --neu-text-secondary: #5b6b82;
-  --neu-text-muted: #8a97ab;
+  --neu-text-secondary: #586680;
+  --neu-text-muted: #64718a;
 
   /* Accent */
-  --neu-accent: #6c7ee1;
-  --neu-accent-hover: #5a6bd4;
+  --neu-accent: #4757b8;
+  --neu-accent-hover: #3b4ba8;
   --neu-on-accent: #fff;
-  --neu-accent-soft: rgb(108 126 225 / 18%);
+  --neu-accent-soft: rgb(71 87 184 / 18%);
 
   /* Feedback */
-  --neu-success: #4caf7d;
-  --neu-warning: #e0a43c;
-  --neu-error: #d95c74;
-  --neu-info: #5aa9d6;
+  --neu-success: #22703f;
+  --neu-warning: #805718;
+  --neu-error: #a6334d;
+  --neu-info: #1f6a9c;
 
   /* Geometry */
   --neu-radius-sm: 8px;
@@ -62,7 +62,7 @@
   --neu-space-6: 32px;
 
   /* Focus (strong ring — critical for low-contrast neumorphism) */
-  --neu-focus-ring: 0 0 0 3px rgb(108 126 225 / 55%);
+  --neu-focus-ring: 0 0 0 3px rgb(71 87 184 / 60%);
 
   /* Motion */
   --neu-transition: 160ms ease;
@@ -90,10 +90,10 @@
     inset -3px -3px 6px rgb(58 63 75 / 90%),
     inset 3px 3px 6px rgb(12 14 18 / 65%);
 
-  /* Text */
+  /* Text — contrast checked against --neu-bg (WCAG) */
   --neu-text-primary: #e4e9f2;
   --neu-text-secondary: #b4bccb;
-  --neu-text-muted: #7f8797;
+  --neu-text-muted: #949cab;
 
   /* Accent — brighter for contrast on dark surfaces */
   --neu-accent: #8a9bf0;
