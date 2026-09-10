@@ -1,0 +1,49 @@
+.neu-textarea {
+  border: 0;
+  border-radius: var(--neu-radius-md);
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+  color: var(--neu-text-primary);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: var(--neu-space-3);
+  resize: vertical;
+  transition: box-shadow var(--neu-transition);
+}
+
+[data-autosize="true"] {
+  resize: none;
+  overflow-y: auto;
+}
+
+.neu-textarea:focus {
+  outline: none;
+  box-shadow: var(--neu-shadow-in-sm), var(--neu-focus-ring);
+}
+
+.neu-textarea--invalid {
+  box-shadow: var(--neu-shadow-in-sm), 0 0 0 2px var(--neu-error);
+}
+
+.neu-textarea--invalid:focus {
+  box-shadow: var(--neu-shadow-in-sm), 0 0 0 3px var(--neu-error);
+}
+
+.neu-textarea:disabled {
+  cursor: not-allowed;
+  color: var(--neu-text-muted);
+  opacity: 0.6;
+}
+
+.neu-textarea::placeholder {
+  color: var(--neu-text-muted);
+}
+
+.neu-textarea--sm {
+  font-size: 0.85rem;
+}
+
+.neu-textarea--lg {
+  font-size: 1.05rem;
+}
