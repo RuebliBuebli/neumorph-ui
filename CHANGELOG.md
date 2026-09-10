@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-09-10
+
 ### Added
 
 - `Table` (columns/rows API, sticky header, zebra), `Pagination` (page window, ellipsis, aria-current, prev/next IconButtons), `Spinner` (status role, reduced-motion), `Skeleton` (text/rect/circle, multi-line), `Breadcrumb` + `BreadcrumbItem` (nav/ol semantics, aria-current).
