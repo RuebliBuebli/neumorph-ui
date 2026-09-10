@@ -1,0 +1,37 @@
+name: Feature request
+description: New component, prop, or capability
+labels: [feat]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What are you trying to do that is not possible today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: API sketch, examples from other libraries, or links are welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - New component
+        - Existing component
+        - Theming / tokens
+        - Docs
+        - Tooling / packaging
+    validations:
+      required: true
+  - type: checkboxes
+    id: willingness
+    attributes:
+      label: Would you be willing to help implement this?
+      options:
+        - label: Yes, I can open a PR
+        - label: No, just suggesting
