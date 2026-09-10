@@ -1,0 +1,47 @@
+.neu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--neu-space-1);
+  padding: var(--neu-space-1) var(--neu-space-3);
+  border-radius: var(--neu-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out-sm);
+  color: var(--neu-text-primary);
+}
+
+.neu-badge--pill {
+  border-radius: var(--neu-radius-pill);
+}
+
+.neu-badge--accent {
+  color: var(--neu-accent);
+}
+
+.neu-badge--success {
+  color: var(--neu-success);
+}
+
+.neu-badge--warning {
+  color: var(--neu-warning);
+}
+
+.neu-badge--error {
+  color: var(--neu-error);
+}
+
+.neu-badge--info {
+  color: var(--neu-info);
+}
+
+/* Optional status dot via ::before when content starts with a space? No —
+   dot class is applied by consumers through data attribute. */
+.neu-badge[data-dot="true"]::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentcolor;
+}

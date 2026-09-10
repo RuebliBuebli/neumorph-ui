@@ -1,0 +1,56 @@
+.neu-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--neu-surface);
+  color: var(--neu-accent);
+  font-weight: 700;
+  overflow: hidden;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.neu-avatar--raised {
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out-sm);
+}
+
+.neu-avatar--sunken {
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+}
+
+.neu-avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.neu-avatar__initials {
+  line-height: 1;
+}
+
+.neu-avatar--sm {
+  width: 28px;
+  height: 28px;
+  font-size: 0.7rem;
+}
+
+.neu-avatar--md {
+  width: 40px;
+  height: 40px;
+  font-size: 0.9rem;
+}
+
+.neu-avatar--lg {
+  width: 56px;
+  height: 56px;
+  font-size: 1.2rem;
+}
+
+.neu-avatar--xl {
+  width: 72px;
+  height: 72px;
+  font-size: 1.5rem;
+}

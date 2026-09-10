@@ -1,0 +1,25 @@
+.neu-icon-button--circle.neu-button {
+  width: 42px;
+  padding-inline: 0;
+  border-radius: 50%;
+}
+
+.neu-icon-button--circle.neu-button--sm {
+  width: 34px;
+}
+
+.neu-icon-button--circle.neu-button--lg {
+  width: 52px;
+}
+
+.neu-icon-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.neu-icon-button__icon svg {
+  width: 1.25em;
+  height: 1.25em;
+}
