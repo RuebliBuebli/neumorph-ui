@@ -1,0 +1,46 @@
+.neu-tooltip-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.neu-tooltip__trigger {
+  display: inline-flex;
+}
+
+.neu-tooltip {
+  position: absolute;
+  z-index: 1100;
+  width: max-content;
+  max-width: 240px;
+  padding: var(--neu-space-2) var(--neu-space-3);
+  border-radius: var(--neu-radius-sm);
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out-sm);
+  color: var(--neu-text-primary);
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.neu-tooltip--top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.neu-tooltip--bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.neu-tooltip--left {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.neu-tooltip--right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}

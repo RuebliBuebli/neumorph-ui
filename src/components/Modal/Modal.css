@@ -1,0 +1,44 @@
+.neu-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--neu-space-5);
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.neu-modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: min(80vh, 640px);
+  border-radius: var(--neu-radius-lg);
+  background-color: var(--neu-surface-raised);
+  box-shadow: var(--neu-shadow-out);
+  color: var(--neu-text-primary);
+  padding: var(--neu-space-5);
+}
+
+.neu-modal:focus-visible {
+  outline: none;
+}
+
+.neu-modal__title {
+  margin: 0 0 var(--neu-space-3);
+  font-size: 1.15rem;
+}
+
+.neu-modal__body {
+  flex: 1;
+  overflow-y: auto;
+  color: var(--neu-text-secondary);
+}
+
+.neu-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--neu-space-3);
+  padding-top: var(--neu-space-4);
+}

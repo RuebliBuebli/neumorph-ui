@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `Modal` (focus trap, Esc/backdrop close, focus restore, scroll lock), `Tooltip` (hover/focus, placements, delay), `Select` (native a11y, options prop or children), `Tabs` (roving tabindex, arrow keys), `Accordion` (disclosure semantics, single/multiple), `RadioGroup` (fieldset/legend, arrow-key navigation).
+
 ## [0.2.0] - 2026-09-10
 
 ### Added
