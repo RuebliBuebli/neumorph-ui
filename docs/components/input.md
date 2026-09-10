@@ -1,6 +1,8 @@
-# Input
+﻿# Input
 
 Single-line text input in a sunken field, with label/hint wiring and affix slots.
+
+<div data-demo="input"></div>
 
 ```tsx
 import { Input } from "@rueblibuebli/neumorph-ui";
@@ -17,13 +19,13 @@ import { Input } from "@rueblibuebli/neumorph-ui";
 
 | Prop | Type | Default | Description |
 |---|---|---|---|
-| `label` | `ReactNode` | — | Clickable label above the field |
-| `hint` | `ReactNode` | — | Helper text below (linked via `aria-describedby`) |
+| `label` | `ReactNode` | â€” | Clickable label above the field |
+| `hint` | `ReactNode` | â€” | Helper text below (linked via `aria-describedby`) |
 | `invalid` | `boolean` | `false` | Error ring + `aria-invalid` |
-| `prefix` / `suffix` | `ReactNode` | — | Content inside the field |
+| `prefix` / `suffix` | `ReactNode` | â€” | Content inside the field |
 | `size` | `"sm" \| "md" \| "lg"` | `"md"` | Field height |
 
-All native `input` attributes pass through (`type`, `placeholder`, `value`, `onChange`, …).
+All native `input` attributes pass through (`type`, `placeholder`, `value`, `onChange`, â€¦).
 
 ```tsx
 <Input label="Price" prefix="$" suffix="per month" invalid hint="Too low" />

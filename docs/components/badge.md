@@ -1,6 +1,8 @@
-# Badge
+﻿# Badge
 
 Small status chip with a raised soft surface.
+
+<div data-demo="badge"></div>
 
 ```tsx
 import { Badge } from "@rueblibuebli/neumorph-ui";

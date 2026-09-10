@@ -1,6 +1,8 @@
-# Pagination
+﻿# Pagination
 
 Page navigation with ellipsis windows and circular prev/next buttons.
+
+<div data-demo="pagination"></div>
 
 ```tsx
 import { useState } from "react";

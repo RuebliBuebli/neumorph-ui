@@ -1,6 +1,8 @@
-# Table
+﻿# Table
 
 Declarative table with soft sunken surface.
+
+<div data-demo="table"></div>
 
 ```tsx
 import { Table } from "@rueblibuebli/neumorph-ui";
@@ -28,4 +30,4 @@ import { Table } from "@rueblibuebli/neumorph-ui";
 | `rows` | `Record<string, ReactNode>[]` | required | Row data keyed by column key |
 | `stickyHeader` | `boolean` | `false` | Sticky header while scrolling |
 | `zebra` | `boolean` | `false` | Subtle alternating rows |
-| `caption` | `string` | — | Accessible name (visually hidden) |
+| `caption` | `string` | â€” | Accessible name (visually hidden) |

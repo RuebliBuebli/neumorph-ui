@@ -1,6 +1,8 @@
-# Slider
+﻿# Slider
 
 Range input with an accent-filled sunken track and raised thumb.
+
+<div data-demo="slider"></div>
 
 ```tsx
 import { Slider } from "@rueblibuebli/neumorph-ui";
@@ -19,9 +21,9 @@ import { Slider } from "@rueblibuebli/neumorph-ui";
 
 | Prop | Type | Default | Description |
 |---|---|---|---|
-| `label` | `ReactNode` | — | Accessible label |
+| `label` | `ReactNode` | â€” | Accessible label |
 | `showValue` | `boolean` | `false` | Render the current value next to the label |
-| `formatValue` | `(value: number) => string` | — | Value formatting |
+| `formatValue` | `(value: number) => string` | â€” | Value formatting |
 | `size` | `"sm" \| "md" \| "lg"` | `"md"` | Track height / thumb size |
 
-All native `input[type=range]` attributes pass through (`min`, `max`, `step`, `value`, `onChange`, `aria-valuetext`, …).
+All native `input[type=range]` attributes pass through (`min`, `max`, `step`, `value`, `onChange`, `aria-valuetext`, â€¦).

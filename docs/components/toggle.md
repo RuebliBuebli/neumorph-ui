@@ -1,6 +1,8 @@
-# Toggle
+﻿# Toggle
 
 On/off switch with `role="switch"` semantics.
+
+<div data-demo="toggle"></div>
 
 ```tsx
 import { Toggle } from "@rueblibuebli/neumorph-ui";
@@ -12,13 +14,13 @@ import { Toggle } from "@rueblibuebli/neumorph-ui";
 
 | Prop | Type | Default | Description |
 |---|---|---|---|
-| `checked` | `boolean` | — | Controlled state |
+| `checked` | `boolean` | â€” | Controlled state |
 | `defaultChecked` | `boolean` | `false` | Uncontrolled initial state |
-| `onCheckedChange` | `(checked: boolean) => void` | — | Change callback |
-| `label` | `ReactNode` | — | Visible (or hidden) label |
+| `onCheckedChange` | `(checked: boolean) => void` | â€” | Change callback |
+| `label` | `ReactNode` | â€” | Visible (or hidden) label |
 | `hideLabel` | `boolean` | `false` | Visually hide label, keep for screen readers |
-| `disabled` | `boolean` | — | Disabled state |
-| `name` / `value` | `string` | — | Form participation |
+| `disabled` | `boolean` | â€” | Disabled state |
+| `name` / `value` | `string` | â€” | Form participation |
 
 ```tsx
 const [on, setOn] = useState(false);

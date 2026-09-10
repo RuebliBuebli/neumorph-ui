@@ -1,6 +1,8 @@
-# Tooltip
+﻿# Tooltip
 
 Short hint on hover/focus, with accessible wiring.
+
+<div data-demo="tooltip"></div>
 
 ```tsx
 import { Tooltip } from "@rueblibuebli/neumorph-ui";

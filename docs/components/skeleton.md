@@ -1,6 +1,8 @@
-# Skeleton
+﻿# Skeleton
 
 Loading placeholder blocks with a soft pulse.
+
+<div data-demo="skeleton"></div>
 
 ```tsx
 import { Skeleton } from "@rueblibuebli/neumorph-ui";
@@ -15,7 +17,7 @@ import { Skeleton } from "@rueblibuebli/neumorph-ui";
 | Prop | Type | Default | Description |
 |---|---|---|---|
 | `shape` | `"text" \| "rect" \| "circle"` | `"text"` | Block shape |
-| `lines` | `number` | — | Multiple text lines (last one shorter) |
-| `width` / `height` | `number \| string` | — | Explicit dimensions |
+| `lines` | `number` | â€” | Multiple text lines (last one shorter) |
+| `width` / `height` | `number \| string` | â€” | Explicit dimensions |
 
-Content is `aria-hidden` — pair skeletons with a `Spinner` or live-region text for screen reader users.
+Content is `aria-hidden` â€” pair skeletons with a `Spinner` or live-region text for screen reader users.

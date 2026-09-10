@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Live interactive previews on every component docs page: real React components mounted client-side above the code samples, each with its own Light/Dark toggle.
+
 ## [1.0.0] - 2026-09-10
 
 First stable release: 23 components, light/dark theming, WCAG AA contrast, docs site, playground, CI/CD to GitHub Packages.
