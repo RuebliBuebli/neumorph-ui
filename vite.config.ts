@@ -10,6 +10,9 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
+  css: {
+    devSourcemap: true,
+  },
   build: {
     lib: {
       entry: "src/index.ts",

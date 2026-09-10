@@ -1,0 +1,111 @@
+/*
+ * neumorph-ui design tokens.
+ *
+ * Neumorphism is defined by two opposing shadows cast onto the surface color:
+ * a light highlight from one side and a dark shadow from the other. All
+ * component styles consume these custom properties only — override any of
+ * them (e.g. [data-theme="light"] { --neu-bg: ... }) to re-theme everything.
+ */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Surfaces */
+  --neu-bg: #e0e5ec;
+  --neu-surface: #e0e5ec;
+  --neu-surface-raised: #e6ebf2;
+  --neu-surface-sunken: #d5dae2;
+
+  /* Neumorphic shadows (two opposing layers) */
+  --neu-shadow-out:
+    -8px -8px 16px rgb(255 255 255 / 75%),
+    8px 8px 16px rgb(163 177 198 / 45%);
+  --neu-shadow-out-sm:
+    -4px -4px 8px rgb(255 255 255 / 75%),
+    4px 4px 8px rgb(163 177 198 / 45%);
+  --neu-shadow-in:
+    inset -6px -6px 12px rgb(255 255 255 / 75%),
+    inset 6px 6px 12px rgb(163 177 198 / 45%);
+  --neu-shadow-in-sm:
+    inset -3px -3px 6px rgb(255 255 255 / 75%),
+    inset 3px 3px 6px rgb(163 177 198 / 45%);
+
+  /* Text */
+  --neu-text-primary: #2d3a4f;
+  --neu-text-secondary: #5b6b82;
+  --neu-text-muted: #8a97ab;
+
+  /* Accent */
+  --neu-accent: #6c7ee1;
+  --neu-accent-hover: #5a6bd4;
+  --neu-on-accent: #fff;
+  --neu-accent-soft: rgb(108 126 225 / 18%);
+
+  /* Feedback */
+  --neu-success: #4caf7d;
+  --neu-warning: #e0a43c;
+  --neu-error: #d95c74;
+  --neu-info: #5aa9d6;
+
+  /* Geometry */
+  --neu-radius-sm: 8px;
+  --neu-radius-md: 14px;
+  --neu-radius-lg: 24px;
+  --neu-radius-pill: 999px;
+
+  --neu-space-1: 4px;
+  --neu-space-2: 8px;
+  --neu-space-3: 12px;
+  --neu-space-4: 16px;
+  --neu-space-5: 24px;
+  --neu-space-6: 32px;
+
+  /* Focus (strong ring — critical for low-contrast neumorphism) */
+  --neu-focus-ring: 0 0 0 3px rgb(108 126 225 / 55%);
+
+  /* Motion */
+  --neu-transition: 160ms ease;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Surfaces — dark mode inverts highlight/shadow hues */
+  --neu-bg: #2a2e37;
+  --neu-surface: #2a2e37;
+  --neu-surface-raised: #31353f;
+  --neu-surface-sunken: #23262e;
+
+  --neu-shadow-out:
+    -8px -8px 16px rgb(58 63 75 / 90%),
+    8px 8px 16px rgb(12 14 18 / 65%);
+  --neu-shadow-out-sm:
+    -4px -4px 8px rgb(58 63 75 / 90%),
+    4px 4px 8px rgb(12 14 18 / 65%);
+  --neu-shadow-in:
+    inset -6px -6px 12px rgb(58 63 75 / 90%),
+    inset 6px 6px 12px rgb(12 14 18 / 65%);
+  --neu-shadow-in-sm:
+    inset -3px -3px 6px rgb(58 63 75 / 90%),
+    inset 3px 3px 6px rgb(12 14 18 / 65%);
+
+  /* Text */
+  --neu-text-primary: #e4e9f2;
+  --neu-text-secondary: #b4bccb;
+  --neu-text-muted: #7f8797;
+
+  /* Accent — brighter for contrast on dark surfaces */
+  --neu-accent: #8a9bf0;
+  --neu-accent-hover: #9dabf4;
+  --neu-on-accent: #1c2130;
+  --neu-accent-soft: rgb(138 155 240 / 22%);
+
+  /* Feedback */
+  --neu-success: #6cc793;
+  --neu-warning: #e8b45c;
+  --neu-error: #e57d91;
+  --neu-info: #72bce5;
+
+  --neu-focus-ring: 0 0 0 3px rgb(138 155 240 / 70%);
+}
