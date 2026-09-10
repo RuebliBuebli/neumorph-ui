@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
+### Changed
 
-- Live interactive previews on every component docs page: real React components mounted client-side above the code samples, each with its own Light/Dark toggle.
+- Docs site rebuilt from scratch as a React SPA that dogfoods the library itself (sidebar, drawer, breadcrumbs, cards and buttons are neumorph-ui components); every component page shows the live component with its code below. VitePress removed; `docs` is now a workspace with `npm run docs` / `npm run docs:build`.
 
 ## [1.0.0] - 2026-09-10
 

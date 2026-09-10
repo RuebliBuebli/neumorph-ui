@@ -38,7 +38,7 @@ Then:
 npm install @rueblibuebli/neumorph-ui
 ```
 
-*(GitHub Packages requires a PAT with `read:packages` even for public packages — see [Getting Started](https://rueblibuebli.github.io/neumorph-ui/getting-started).)*
+*(GitHub Packages requires a PAT with `read:packages` even for public packages — see [Getting Started](https://rueblibuebli.github.io/neumorph-ui/#/getting-started).)*
 
 ## Usage
 
@@ -67,7 +67,7 @@ npm run build        # vite lib build + tsc
 
 ## Contributing
 
-See [CONTRIBUTING](https://rueblibuebli.github.io/neumorph-ui/contributing) — GitHub flow with issues → branches → PRs, squash merges, releases via `gh release create`.
+See [CONTRIBUTING](https://rueblibuebli.github.io/neumorph-ui/#/contributing) — GitHub flow with issues → branches → PRs, squash merges, releases via `gh release create`.
 
 ## License
 
