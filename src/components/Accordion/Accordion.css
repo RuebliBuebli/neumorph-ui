@@ -29,6 +29,7 @@
   justify-content: space-between;
   gap: var(--neu-space-3);
   width: 100%;
+  box-sizing: border-box;
   border: 0;
   border-radius: inherit;
   background: transparent;

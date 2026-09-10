@@ -1,3 +1,11 @@
+/* Reset — the library's .neu-reset is opt-in, so the docs app sets it globally */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Layout */
 
 .docs-layout {
