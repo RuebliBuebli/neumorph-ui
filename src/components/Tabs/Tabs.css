@@ -1,0 +1,52 @@
+.neu-tabs__list {
+  display: flex;
+  gap: var(--neu-space-2);
+  padding: var(--neu-space-2);
+  border-radius: var(--neu-radius-pill);
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+}
+
+.neu-tabs__tab {
+  border: 0;
+  border-radius: var(--neu-radius-pill);
+  background: transparent;
+  color: var(--neu-text-secondary);
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: var(--neu-space-2) var(--neu-space-4);
+  cursor: pointer;
+  transition:
+    background-color var(--neu-transition),
+    color var(--neu-transition),
+    box-shadow var(--neu-transition);
+}
+
+.neu-tabs__tab--active {
+  background-color: var(--neu-surface-raised);
+  color: var(--neu-accent);
+  box-shadow: var(--neu-shadow-out-sm);
+}
+
+.neu-tabs__tab--disabled {
+  cursor: not-allowed;
+  color: var(--neu-text-muted);
+  opacity: 0.6;
+}
+
+.neu-tabs__tab:focus-visible {
+  outline: none;
+  box-shadow: var(--neu-shadow-out-sm), var(--neu-focus-ring);
+}
+
+.neu-tabs__panel {
+  padding: var(--neu-space-4) 0 0;
+  color: var(--neu-text-secondary);
+}
+
+.neu-tabs__panel:focus-visible {
+  outline: none;
+  border-radius: var(--neu-radius-sm);
+  box-shadow: var(--neu-focus-ring);
+}

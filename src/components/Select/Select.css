@@ -1,0 +1,71 @@
+.neu-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: var(--neu-radius-md);
+  background-color: var(--neu-surface-sunken);
+  box-shadow: var(--neu-shadow-in-sm);
+  transition: box-shadow var(--neu-transition);
+}
+
+.neu-select:focus-within {
+  box-shadow: var(--neu-shadow-in-sm), var(--neu-focus-ring);
+}
+
+.neu-select--invalid {
+  box-shadow: var(--neu-shadow-in-sm), 0 0 0 2px var(--neu-error);
+}
+
+.neu-select--invalid:focus-within {
+  box-shadow: var(--neu-shadow-in-sm), 0 0 0 3px var(--neu-error);
+}
+
+.neu-select--disabled {
+  opacity: 0.6;
+}
+
+.neu-select__control {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--neu-text-primary);
+  font: inherit;
+  padding-inline: var(--neu-space-3);
+  padding-block: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.neu-select__control:focus {
+  outline: none;
+}
+
+.neu-select__control:disabled {
+  cursor: not-allowed;
+  color: var(--neu-text-muted);
+}
+
+.neu-select__chevron {
+  width: 14px;
+  height: 14px;
+  margin-right: var(--neu-space-3);
+  color: var(--neu-text-muted);
+  pointer-events: none;
+}
+
+.neu-select--sm {
+  min-height: 34px;
+  font-size: 0.85rem;
+}
+
+.neu-select--md {
+  min-height: 42px;
+  font-size: 0.95rem;
+}
+
+.neu-select--lg {
+  min-height: 50px;
+  font-size: 1.05rem;
+}
