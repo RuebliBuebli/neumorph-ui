@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-09-10
+
 ### Added
 
 - Project scaffold: TypeScript, Vite library mode (ES + CJS + bundled CSS), ESLint, Prettier, Stylelint, Vitest + Testing Library.
