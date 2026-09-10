@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `Input` (label/hint/invalid/prefix/suffix/sizes), `Textarea` (autoSize, sizes), `Toggle` (role=switch, controlled/uncontrolled), `Checkbox` (indeterminate), `Slider` (accent fill, value output, sizes).
+- `Progress` (determinate/indeterminate, tones), `Badge` (tones, pill), `Alert` (tones, role=alert/status, dismissible), `Avatar` (image + initials fallback, sizes, variants), `IconButton` (square/circle, requires aria-label).
 
 ## [0.1.0] - 2026-09-10
 
